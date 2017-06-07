@@ -1,0 +1,14 @@
+<div *ngFor="let word of result.gameWords">
+  <div class="ui-g">
+    <div class="ui-g-4"></div>
+    <div class="ui-g-4" align="center">
+      <div class="highlightbox-wrapper">
+        <div class="wrapper-text">
+          <div class="wrapper-text-big">{{word.word}}</div>
+          <div class="wrapper-text-small">{{word.time}} seconds</div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-4"></div>
+  </div>
+</div>

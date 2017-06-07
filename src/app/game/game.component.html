@@ -1,17 +1,32 @@
-<span>
-    {{leftBound}}
-</span>
+
+<div class="ui-g" >
+  <div class="ui-g-3"></div>
+  <div class="ui-g-2" align="left">
+    <h1>
+      {{leftBound}}
+    </h1>
+  </div>
+  <div class="ui-g-2" align="center">
+    <h1>
+      {{display}}
+    </h1>
+  </div>
+  <div class="ui-g-2" align="right">
+    <h1>
+      {{rightBound}}
+    </h1>
+  </div>
+  <div class="ui-g-3"></div>
+</div>
 
 
-<span>
-    {{display}}
-</span>
-
-
-<span>
-    {{rightBound}}
-</span>
-
-<div>
-  Success count: {{successCount}}
+<div class="ui-g">
+  <div class="ui-g-4"></div>
+  <div class="ui-g-4" align="center">
+    <app-timer (notifyTimeComplete)="onTimeComplete()"></app-timer>
+    <h1>
+      Words Guessed: {{successCount}}
+    </h1>
+  </div>
+  <div class="ui-g-4"></div>
 </div>

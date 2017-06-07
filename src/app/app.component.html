@@ -1,1 +1,20 @@
-<app-game></app-game>
+<body class="ui-widget">
+<app-header [title]="title"></app-header>
+
+<div *ngIf="!gameActive">
+  <div class="ui-g">
+    <div class="ui-g-12" align="center">
+      <button id="startGame" pButton label="Start" (click)="onStart()"></button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="gameActive">
+  <app-game (gameResult)="onGameFinished($event)"></app-game>
+</div>
+
+<div *ngIf="lastResult">
+  <app-results [result]="lastResult"></app-results>
+</div>
+
+</body>
