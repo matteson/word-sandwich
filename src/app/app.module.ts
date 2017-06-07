@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { DictionaryService } from './dictionary.service';
+import { DictionaryService } from './services/dictionary.service';
+import { Game } from "./game/game";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Game
   ],
   imports: [
     BrowserModule,

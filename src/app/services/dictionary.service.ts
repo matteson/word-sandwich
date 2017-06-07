@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { words3 } from './words-3';
+import { words3 } from '../data/words-3';
 
 @Injectable()
 export class DictionaryService {
