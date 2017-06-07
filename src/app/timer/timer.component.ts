@@ -12,7 +12,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   notifyTimeComplete: EventEmitter<any> = new EventEmitter<any>();
 
   private futureNum: number;
-  private increment = 5;
+  private increment = 120;
   private complete = false;
 
   private future: Date;

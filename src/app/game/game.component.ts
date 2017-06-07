@@ -82,12 +82,11 @@ export class GameComponent implements OnInit {
   onReal(word: string): void {
     console.log(word);
     console.log(this.word);
-
-
-    if (word <= this.word) {
+    
+    if (word <= this.word && this.leftBound <= word) {
       this.leftBound = word;
     }
-    if (word >= this.word) {
+    if (this.word <= word && word <= this.rightBound ) {
       this.rightBound = word;
     }
 

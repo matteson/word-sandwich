@@ -24,12 +24,11 @@
 .wrapper-text-big {
   /*color: #333;*/
   font-weight:900;
-  font-size:120%;
+  font-size:220%;
   margin-bottom:8px;
 }
 
 .wrapper-text-small {
   font-size:85%;
-  /*color:#888D94;*/
   margin-top:8px;
 }
