@@ -16,19 +16,17 @@
 }
 
 .wrapper-text {
-  float:left;
-  width: 90%;
-  margin-top:8px;
+  font-size: 3.5vw;
 }
 
 .wrapper-text-big {
   /*color: #333;*/
   font-weight:900;
-  font-size:220%;
-  margin-bottom:8px;
+  font-size:3.5vw;
 }
 
 .wrapper-text-small {
-  font-size:85%;
-  margin-top:8px;
+  font-size:2vw;
+  margin-top:.4vw;
+  margin-bottom:.4vw;
 }
