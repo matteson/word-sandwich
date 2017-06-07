@@ -1,9 +1,9 @@
 <div class="ui-g" >
   <div class="ui-g-3"></div>
   <div class="ui-g-6" align="center">
-    <h1>
+    <div class="permanent-text">
       Guess a word between ...
-    </h1>
+    </div>
   </div>
   <div class="ui-g-3"></div>
 </div>
@@ -12,19 +12,19 @@
 <div class="ui-g" >
   <div class="ui-g-3"></div>
   <div class="ui-g-2" align="left">
-    <h1>
+    <div class="bounds-text">
       {{leftBound}}
-    </h1>
+    </div>
   </div>
   <div class="ui-g-2" align="center">
-    <h1>
+    <div class="guess-text">
       {{display}}
-    </h1>
+    </div>
   </div>
   <div class="ui-g-2" align="right">
-    <h1>
+    <div class="bounds-text">
       {{rightBound}}
-    </h1>
+    </div>
   </div>
   <div class="ui-g-3"></div>
 </div>
@@ -34,9 +34,9 @@
   <div class="ui-g-4"></div>
   <div class="ui-g-4" align="center">
     <app-timer (notifyTimeComplete)="onTimeComplete()"></app-timer>
-    <h1>
+    <div class="permanent-text">
       Words Guessed: {{successCount}}
-    </h1>
+    </div>
   </div>
   <div class="ui-g-4"></div>
 </div>
