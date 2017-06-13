@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 
@@ -30,7 +31,10 @@ import { HeaderComponent } from "./header/header.component";
     HttpModule,
     ButtonModule
   ],
-  providers: [DictionaryService],
+  providers: [
+    {provide: APP_BASE_HREF, useValue: '/word-sandwich'},
+    DictionaryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

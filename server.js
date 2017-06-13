@@ -1,16 +1,13 @@
-/**
- * Created by andrew on 6/7/17.
- */
-
 var express = require('express');
 var path = require('path');
 var fs = require('fs');
 
-
 var app = express();
 
 var staticRoot = __dirname + '/dist/';
+console.log(staticRoot);
 app.set('port', (process.env.PORT || 61337));
+
 app.use(express.static(staticRoot));
 
 app.use(function(req, res, next){

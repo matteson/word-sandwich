@@ -1,0 +1,17 @@
+[Unit]
+Description=Use Node to run the express server responsible for static frontend
+
+[Service]
+ExecStart=/usr/bin/node /home/ubuntu/word-sandwich/server.js
+
+Restart=always
+RestartSec=10                       # Restart service after 10 seconds if node service crashes
+StandardOutput=syslog               # Output to syslog
+StandardError=syslog                # Output to syslog
+SyslogIdentifier=frontend
+#User=<alternate user>
+#Group=<alternate group>
+Environment=NODE_ENV=production PORT=61337
+
+[Install]
+WantedBy=multi-user.target

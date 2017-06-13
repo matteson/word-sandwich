@@ -20,7 +20,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   private diff: number;
   private $counter: Observable<number>;
   private subscription: Subscription;
-  private message: string;
+  public message: string;
 
   constructor() {
     this.futureNum = Date.now();
